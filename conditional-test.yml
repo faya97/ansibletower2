@@ -8,7 +8,7 @@
     - name: run a command
       ios_command:
         commands:
-          - show interface ethernet eth2
+          - show interface gi0/1
       register: result
       ignore_errors: True
 
