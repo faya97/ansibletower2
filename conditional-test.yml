@@ -8,7 +8,7 @@
     - name: run a command
       ios_command:
         commands:
-          - show interface gi0/1
+          - show interface "{{ interface }}"
       register: result
       ignore_errors: True
 
