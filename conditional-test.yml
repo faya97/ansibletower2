@@ -8,7 +8,7 @@
     - name: run a command
       ios_command:
         commands:
-          - show interfaces "{{ interface }}"
+          - show interfaces gi0/1
       register: result
       ignore_errors: True
 
@@ -17,5 +17,5 @@
       
 
     - debug:
-        msg: "show interface ethernet eth2 failed, interface might not be present"
+        msg: "show interface ethernet {{ interface }} failed, interface might not be present"
       when: result is failed
