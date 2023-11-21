@@ -8,9 +8,13 @@
     - name: run a command
       ios_command:
         commands:
-          - show interface "{{ interface }}"
+          - show interfaces "{{ interface }}"
       register: result
       ignore_errors: True
+
+    - debug:
+        msg: "{{ result }}"
+      
 
     - debug:
         msg: "show interface ethernet eth2 failed, interface might not be present"
