@@ -16,7 +16,7 @@
         msg: "ios fact : {{ ios_facts }}"
 
 - name: check vyos system
-  hosts: vyos_group
+  hosts: spine01
   gather_facts: false
 
   tasks:
