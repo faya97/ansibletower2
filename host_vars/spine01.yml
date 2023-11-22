@@ -1,2 +1,2 @@
-ansible_user: "{{ username }}"
-ansible_password: "{{ password }}"
+ansible_user: "{{ username1 }}"
+ansible_password: "{{ password1 }}"
