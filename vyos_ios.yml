@@ -1,0 +1,25 @@
+---
+- name: check ios system
+  hosts: cisco_group
+  gather_facts: false
+
+  tasks:
+    - name: commands for ios
+      ios_command:
+        commands:
+          - sh version
+          - sh clock
+          - sh proc mem
+
+- name: check vyos system
+  hosts: vyos_group
+  gather_facts: false
+
+  tasks:
+    - name: commands for vyos
+      vyos_command:
+        commands:
+          - sh host date
+          - sh host domain
+          - sh host name
+          - sh host os
