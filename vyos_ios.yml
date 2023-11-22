@@ -10,7 +10,7 @@
           - sh version
           - sh clock
           - sh proc mem
-      result: ios_facts
+      register: ios_facts
     
     - debug:
         msg: "ios fact : {{ ios_facts }}"
@@ -27,7 +27,7 @@
           - sh host domain
           - sh host name
           - sh host os
-      result: vyos_facts
+      register: vyos_facts
     
     - debug:
         msg: "vyos fact : {{ vyos_facts }}"
