@@ -10,6 +10,10 @@
           - sh version
           - sh clock
           - sh proc mem
+      result: ios_facts
+    
+    - debug:
+        msg: "ios fact : {{ ios_facts }}"
 
 - name: check vyos system
   hosts: vyos_group
@@ -23,3 +27,7 @@
           - sh host domain
           - sh host name
           - sh host os
+      result: vyos_facts
+    
+    - debug:
+        msg: "vyos fact : {{ vyos_facts }}"
