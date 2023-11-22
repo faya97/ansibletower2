@@ -1,19 +1,5 @@
 ---
-- name: check ios system
-  hosts: cisco_group
-  gather_facts: false
 
-  tasks:
-    - name: commands for ios
-      ios_command:
-        commands:
-          - sh version
-          - sh clock
-          - sh proc mem
-      result: ios_facts
-    
-    - debug:
-        msg: "ios fact : {{ ios_facts }}"
 
 - name: check vyos system
   hosts: vyos_group
