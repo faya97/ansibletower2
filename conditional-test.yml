@@ -1,6 +1,6 @@
 ---
 - name: test show command
-  hosts: cisco_group
+  hosts: core
   gather_facts: false
 
 
