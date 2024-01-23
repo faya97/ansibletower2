@@ -1,6 +1,7 @@
 ---
 - name: filter ipv4
   gather_facts: false
+  hosts: cs01
   roles:
     - new_role
 
