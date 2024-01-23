@@ -3,7 +3,7 @@
   gather_facts: false
   hosts: cs01
   roles:
-    - new_rol
+    - new_role
 
 
   tasks:
