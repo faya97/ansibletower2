@@ -1,21 +1,18 @@
 ---
-- name: test show command
-  hosts: core
+- name: filter ipv4
   gather_facts: false
+  roles:
+    - new_role
 
 
   tasks:
     - name: run a command
       ios_command:
         commands:
-          - show interfaces {{ interface }}
+          - show interface ethernet eth2
       register: result
       ignore_errors: True
 
     - debug:
-        msg: "{{ result }}"
-      
-
-    - debug:
-        msg: "show interface ethernet {{ interface }} failed, interface might not be present"
+        msg: "show interface ethernet eth2 failed, interface might not be present"
       when: result is failed
