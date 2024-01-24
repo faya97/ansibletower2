@@ -7,6 +7,10 @@
 
 
   tasks:
+    - name: Install Role Dependencies
+      ansible.builtin.command:
+        cmd: ansible-galaxy role -r ./roles/requirements.yml
+
     - name: run a command
       ios_command:
         commands:
