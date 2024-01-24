@@ -1,2 +1,5 @@
 ---
 # tasks file for new_role
+- name: display message from myrole
+  debug:
+    msg: display from myrole
