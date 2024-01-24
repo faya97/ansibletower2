@@ -1,0 +1,6 @@
+# requirements.yml
+
+- src: https://github.com/Juniper/ansible-junos-stdlib.git
+  name: junos
+  version: master
+  scm: git
