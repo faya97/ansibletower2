@@ -1,0 +1,5 @@
+# requirements.yml
+
+roles:
+  - name: juniper.junos
+    version: "2.4.0"
