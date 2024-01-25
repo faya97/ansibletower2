@@ -1,0 +1,13 @@
+---
+- name: show interface
+  hosts: cs01
+  gather_facts: false
+  
+  tasks:
+    - name: show interface of cs01
+      ios_command:
+        commands: show interfaces {{ interface }}
+      register: result
+
+    - debug:
+        var: result

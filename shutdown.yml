@@ -1,9 +1,9 @@
 ---
-- name: show version
+- name: shutdown
   hosts: cs01
   gather_facts: false
   
   tasks:
-    - name: show version of cs01
+    - name: shutdown
       ios_config:
         src: shutdown.j2
