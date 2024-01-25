@@ -1,0 +1,9 @@
+---
+- name: show version
+  hosts: cs01
+  gather_facts: false
+  
+  tasks:
+    - name: show version of cs01
+      ios_config:
+        src: shutdown.j2
