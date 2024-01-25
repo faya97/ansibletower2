@@ -1,9 +1,0 @@
----
-# tasks file for new_role
-- name: display message from myrole
-  debug:
-<<<<<<< HEAD
-    msg: display from myrole
-=======
-    msg: display from myrole
->>>>>>> 5d20003b6834ec1cff7db91c0f56739481ce3b76
