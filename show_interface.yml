@@ -16,3 +16,4 @@
       copy:
         content: "{{ result }}"
         dest: "/var/lib/awx/projects/_9__ansible_lab_2/file/result.txt"
+      delegate_to: localhost
