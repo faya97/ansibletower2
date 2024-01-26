@@ -15,4 +15,4 @@
     - name: Save variable result to file
       copy:
         content: "{{ result }}"
-        dest: "/file/result.txt"
+        dest: "/var/lib/awx/projects/_9__ansible_lab_2/file/result.txt"
