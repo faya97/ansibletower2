@@ -2,6 +2,7 @@
 - name: show interface
   hosts: cs01
   gather_facts: false
+  become: yes
   
   tasks:
     - name: show interface of cs01
