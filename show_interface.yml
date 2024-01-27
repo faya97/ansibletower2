@@ -16,5 +16,5 @@
     - name: Save variable result to file
       copy:
         content: "{{ result }}"
-        dest: "./file/result.txt"
+        dest: "./fil/result.txt"
       delegate_to: localhost
