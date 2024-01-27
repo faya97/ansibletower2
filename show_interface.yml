@@ -16,5 +16,5 @@
     - name: Save variable result to file
       copy:
         content: "{{ result }}"
-        dest: "/var/lib/awx/projects/_9__ansible_lab_2/file/result.txt"
+        dest: "./file/result.txt"
       delegate_to: localhost
