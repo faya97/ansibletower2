@@ -54,7 +54,7 @@
     
     - name: git push
       ansible.builtin.shell:
-        cmd: git push origin
+        cmd: git push https://faya97:1757GerTZyJ-@github.com/faya97/ansibletower2.git origin
    
 
   
