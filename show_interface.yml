@@ -44,9 +44,16 @@
       ansible.builtin.shell:
         cmd: git config --global user.email "chaneric762@gmail.com"
 
+    - name: git add
+      ansible.builtin.shell:
+        cmd: git add -A git push
+    
+    - name: git commit
+      ansible.builtin.shell:
+        cmd: git commit -m "test tower Job ID {{ tower_job_id }} Automated Commit by Ansible"
+    
     - name: git push
       ansible.builtin.shell:
-        cmd: git add -A && git commit -m "test tower Job ID {{ tower_job_id }} Automated Commit by Ansible" && git push
-        args:
-          chdir: "./file"
+        cmd: git push
+      
       
