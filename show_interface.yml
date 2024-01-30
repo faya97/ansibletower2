@@ -46,7 +46,7 @@
 
     - name: git add
       ansible.builtin.shell:
-        cmd: git add -A git push
+        cmd: git add -A
     
     - name: git commit
       ansible.builtin.shell:
