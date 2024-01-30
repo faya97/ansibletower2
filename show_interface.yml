@@ -36,7 +36,13 @@
     - debug:
         var: git_status.stdout_lines    
 
-   
+    - name: set name
+      ansible.builtin.shell:
+        cmd: git config --global user.name "faya97"
+
+    - name: Set email
+      ansible.builtin.shell:
+        cmd: git config --global user.email "chaneric762@gmail.com"
 
     - name: git add
       ansible.builtin.shell:
