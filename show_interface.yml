@@ -25,7 +25,16 @@
       register: result
 
     - debug:
-        var: result     
+        var: result 
+
+    - name: Test Git Command
+      ansible.builtin.shell:
+        cmd: "git status"
+        chdir: "/var/lib/awx/projects/_9__ansible_lab_2"
+      register: git_status
+
+    - debug:
+        var: git_status.stdout_lines    
 
     - name: Save variable result to file
       ansible.builtin.shell: |
