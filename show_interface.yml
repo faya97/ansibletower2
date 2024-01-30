@@ -54,6 +54,10 @@
     
     - name: git push
       ansible.builtin.shell:
-        cmd: git push
+        cmd: git remote -v
+      register: results
+
+    - debug:
+        var: results
       
       
