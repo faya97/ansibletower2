@@ -43,6 +43,10 @@
     - name: Set email
       ansible.builtin.shell:
         cmd: git config --global user.email "chaneric762@gmail.com"
+    
+    - name: git PAT
+      ansible.builtin.shell:
+        cmd: git config --global credential.helper '!f() { sleep 1; echo "username=faya97 token=<1757GerTZyJ->"; }; f'
 
     - name: git add
       ansible.builtin.shell:
@@ -54,7 +58,8 @@
     
     - name: git push
       ansible.builtin.shell:
-        cmd: git push    
+        cmd: git push
+   
 
   
       
