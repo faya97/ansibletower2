@@ -20,7 +20,8 @@
     
     - name: display folder
       ansible.builtin.shell: |
-        cd file && ls
+        cd file 
+        ls
       register: result
 
     - debug:
