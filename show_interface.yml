@@ -47,5 +47,5 @@
     - name: git push
       ansible.builtin.shell:
         cmd: git add -A && git commit -m "test tower Job ID {{ tower_job_id }} Automated Commit by Ansible" && git push
-        chdir: "./"
+        chdir: "./file"
       
