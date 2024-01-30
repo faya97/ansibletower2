@@ -30,7 +30,7 @@
     - name: Test Git Command
       ansible.builtin.shell:
         cmd: "git status"
-        chdir: "./ansibletower2"
+        chdir: "./"
       register: git_status
 
     - debug:
