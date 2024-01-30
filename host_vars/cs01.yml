@@ -1,1 +1,9 @@
 interface:  GigabitEthernet 0/1
+
+ansible_user : admin
+ansible_ssh_pass: student
+ansible_network_os: ios
+ansible_become: true
+ansible_become_method: enable
+ansible_become_password: azerty
+ansible_connection: network_cli

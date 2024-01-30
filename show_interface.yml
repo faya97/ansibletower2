@@ -50,7 +50,7 @@
     
     - name: git commit
       ansible.builtin.shell:
-        cmd: git commit -m "test tower Job ID {{ tower_job_id }} Automated Commit by Ansible"
+        cmd: git commit -m "test tower Job ID Automated Commit by Ansible"
     
     - name: git push
       ansible.builtin.shell:
