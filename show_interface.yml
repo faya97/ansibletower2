@@ -48,15 +48,14 @@
       ansible.builtin.shell:
         cmd: git add -A
     
-    - name: git commit
-      ansible.builtin.shell:
-        cmd: git commit -m "test tower Job ID Automated Commit by Ansibles"
+    - name: Commit Changes
+      git:
+        repo: ./
+        msg: "Commit message describing the changes"
+        update_index: yes
     
-    - name: git push
-      ansible.builtin.shell:
-        cmd: git push https://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@github.com/faya97/ansibletower2.git
-   
-
-  
+    - name: Push Changes
+      git:
+        repo: ./
       
       
