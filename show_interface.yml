@@ -52,7 +52,6 @@
       git:
         repo: ./
         msg: "Commit message describing the changes"
-        update_index: yes
     
     - name: Push Changes
       git:
