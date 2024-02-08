@@ -1,9 +1,9 @@
 ---
 - name: shutdown
-  hosts: cs01
+  hosts: network
   gather_facts: false
   
   tasks:
     - name: shutdown
       ios_config:
-        src: shutdown.j2
+        src: creationvalan.j2
