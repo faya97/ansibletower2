@@ -4,3 +4,6 @@
   debug:
     msg: display from myrole2
 
+- name: create configuration file
+  template: src=shutdown.j2 dest={{path_files}}/port.set
+
