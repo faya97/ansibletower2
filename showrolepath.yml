@@ -1,0 +1,11 @@
+---
+- name: show role path
+  hosts: cs01
+  roles: 
+    - new_role2
+
+  tasks:
+
+    - name: show roles 
+      debug:
+        var: role_path
