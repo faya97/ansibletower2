@@ -6,6 +6,12 @@
 
   tasks:
 
-    - name: show roles 
-      debug:
-        var: role_path
+    - name: display folder
+      ansible.builtin.shell: |
+        cd ./roles/new_role2/files
+        ls
+      register: result
+
+    - debug:
+        var: result 
+      

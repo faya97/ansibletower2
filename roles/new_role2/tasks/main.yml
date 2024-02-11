@@ -6,4 +6,3 @@
 
 - name: create configuration file
   template: src=shutdown.j2 dest={{path_files}}/port.set
-
