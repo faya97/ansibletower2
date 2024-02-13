@@ -17,5 +17,5 @@
 
     - name: injection of the configuration
       ios_config:
-        src: "./files/port.set"
+        src: "./roles/new_role2/files/port.set"
       
