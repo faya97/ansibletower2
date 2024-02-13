@@ -14,4 +14,8 @@
 
     - debug:
         var: result 
+
+    - name: injection of the configuration
+      ios_config:
+        src: "{{path_files}}/port.set"
       
