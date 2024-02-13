@@ -2,7 +2,8 @@
 - name: show role path
   hosts: cs01
   roles: 
-    - new_role2
+    - role: "new_role2"
+      tags: "role"
 
   tasks:
 
