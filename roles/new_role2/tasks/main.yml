@@ -3,6 +3,7 @@
 - name: display message from myrole
   debug:
     msg: display from myrole2
+  tags: role1
  
 
 - name: create configuration file
