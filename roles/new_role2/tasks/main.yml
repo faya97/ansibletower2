@@ -5,6 +5,9 @@
     msg: display from myrole2
   tags: role1
  
+- name: make up the template
+  debug:
+    msg: "{{ lookup('template', '../template/shutdown.j2') }}"
 
 - name: create configuration file
   template: src=shutdown.j2 dest={{path_files}}/port_{{ inventory_hostname }}.set
