@@ -7,7 +7,7 @@
  
 - name: make up the template
   debug:
-    msg: "{{ lookup('template', '../templates/shutdown.j2') }}"
+    msg: "{{ lookup('template', '../templates/shutdown.j2') | to_nice_yaml }}"
   tags: template
 
 - name: create configuration file
