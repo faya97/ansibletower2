@@ -19,5 +19,5 @@
 
     - name: injection of the configuration
       ios_config:
-        src: "{{ lookup('template', '../templates/shutdown.j2') }}"
+        src: "{{ lookup('template', './templates/shutdown.j2') }}"
       
