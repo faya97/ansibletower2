@@ -19,5 +19,5 @@
 
     - name: injection of the configuration
       ios_config:
-        src: "./roles/new_role2/files/port_{{ inventory_hostname }}.set"
+        src: "{{ lookup('template', '../templates/shutdown.j2') }}"
       
