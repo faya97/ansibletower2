@@ -1,6 +1,7 @@
 ---
 - name: show role path
   hosts: cs01
+  gather_facts: true
   roles: 
     - role: "new_role2"
       tags: "role"
